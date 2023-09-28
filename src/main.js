@@ -24,9 +24,9 @@ function handleCalcDates(event) {
 
     if (firstDate && secondDate) {
         const diff = diffDates(firstDate, secondDate);
-        dateCalcResult.innerHTML = diffToHtml(diff);
+        dateCalcresult.innerHTML = diffToHtml(diff);
     }
-    else dateCalcResult.innerHTML = formatError("Для расчета промежутка необходимо заполнить оба поля");
+    else dateCalcresult.innerHTML = formatError("Для расчета промежутка необходимо заполнить оба поля");
 }
 
 /*event.target — это элемент, который вызвал событие. Это то, что называется эмитентом.
